@@ -17,9 +17,9 @@ cc_library_static {
     name: "libinit_picasso",
     srcs: ["init_picasso.cpp"],
     recovery_available: true,
-    whole_static_libs: ["libbase"],
     include_dirs: [
         "system/core/base/include",
-        "system/core/init"
-    ]
+        "system/core/init",
+    ],
+    shared_libs: ["libbase"],
 }
