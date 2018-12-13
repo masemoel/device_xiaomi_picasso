@@ -565,4 +565,9 @@
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
+
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+          manually by the user. Off by default, since the expected haptic feedback may not be
+          available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
 </resources>
