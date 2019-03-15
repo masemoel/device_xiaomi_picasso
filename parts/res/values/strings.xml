@@ -82,4 +82,7 @@
     <string name="fps_90">90 hz</string>
     <string name="fps_60">60 hz</string>
     <string name="fps_30">30 hz</string>
+
+     <!-- Dirac QS tile -->
+    <string name="dirac_qs_tile_title">Mi Sound Enhancer</string>
 </resources>
