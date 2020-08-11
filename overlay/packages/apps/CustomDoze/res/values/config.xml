@@ -18,4 +18,5 @@
 <resources>
     <!-- Defines the custom proximity sensor used by various OEMs like OnePlus-->
     <string name="config_custom_tilt">xiaomi.sensor.pickup</string>
+    <string name="config_custom_proximity">xiaomi.sensor.proxmity</string>
 </resources>
