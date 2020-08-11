@@ -31,20 +31,27 @@ public final class ThermalUtils {
 
     protected static final int STATE_DEFAULT = 0;
     protected static final int STATE_BENCHMARK = 1;
-    protected static final int STATE_CAMERA = 2;
-    protected static final int STATE_DIALER = 3;
-    protected static final int STATE_GAMING = 4;
+    protected static final int STATE_BROWSER = 2;
+    protected static final int STATE_CAMERA = 3;
+    protected static final int STATE_DIALER = 4;
+    protected static final int STATE_GAMING = 5;
+    protected static final int STATE_YOUTUBE = 6;
 
     private static final String THERMAL_STATE_DEFAULT = "0";
     private static final String THERMAL_STATE_BENCHMARK = "10";
+    private static final String THERMAL_STATE_BROWSER = "11";
     private static final String THERMAL_STATE_CAMERA = "12";
     private static final String THERMAL_STATE_DIALER = "8";
     private static final String THERMAL_STATE_GAMING = "13";
+    private static final String THERMAL_STATE_YOUTUBE = "14";
 
     private static final String THERMAL_BENCHMARK = "thermal.benchmark=";
+    private static final String THERMAL_BROWSER = "thermal.browser=";
     private static final String THERMAL_CAMERA = "thermal.camera=";
     private static final String THERMAL_DIALER = "thermal.dialer=";
     private static final String THERMAL_GAMING = "thermal.gaming=";
+    private static final String THERMAL_YOUTUBE = "thermal.youtube=";
+
 
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
 

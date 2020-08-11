@@ -19,6 +19,8 @@ package org.lineageos.settings.device.thermal;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
+import org.lineageos.settings.device.utils.FileUtils;
+
 public class ThermalActivity extends PreferenceActivity {
 
     private static final String TAG_THERMAL = "thermal";
