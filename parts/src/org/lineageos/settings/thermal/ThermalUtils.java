@@ -74,10 +74,12 @@ public final class ThermalUtils {
 
     private String getValue() {
         String value = mSharedPrefs.getString(THERMAL_CONTROL, null);
+        String[] modes = value.split(":");
+        if (modes.length < 5) value = null;
 
         if (value == null || value.isEmpty()) {
-            value = THERMAL_BENCHMARK + ":" + THERMAL_CAMERA + ":" +
-                    THERMAL_DIALER + ":" + THERMAL_GAMING;
+            value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" +
+                    THERMAL_DIALER + ":" + THERMAL_GAMING + ":" + THERMAL_YOUTUBE;
             writeValue(value);
         }
         return value;
@@ -93,18 +95,25 @@ public final class ThermalUtils {
             case STATE_BENCHMARK:
                 modes[0] = modes[0] + packageName + ",";
                 break;
-            case STATE_CAMERA:
+            case STATE_BROWSER:
                 modes[1] = modes[1] + packageName + ",";
                 break;
-            case STATE_DIALER:
+            case STATE_CAMERA:
                 modes[2] = modes[2] + packageName + ",";
                 break;
-            case STATE_GAMING:
+            case STATE_DIALER:
                 modes[3] = modes[3] + packageName + ",";
+                break;
+            case STATE_GAMING:
+                modes[4] = modes[4] + packageName + ",";
+                break;
+            case STATE_YOUTUBE:
+                modes[5] = modes[5] + packageName + ",";
                 break;
         }
 
-        finalString = modes[0] + ":" + modes[1] + ":" + modes[2] + ":" + modes[3];
+        finalString = modes[0] + ":" + modes[1] + ":" + modes[2] + ":" + modes[3] + ":" +
+                modes[4] + ":" + modes[5];
 
         writeValue(finalString);
     }
@@ -116,11 +125,15 @@ public final class ThermalUtils {
         if (modes[0].contains(packageName + ",")) {
             state = STATE_BENCHMARK;
         } else if (modes[1].contains(packageName + ",")) {
-            state = STATE_CAMERA;
+            state = STATE_BROWSER;
         } else if (modes[2].contains(packageName + ",")) {
-            state = STATE_DIALER;
+            state = STATE_CAMERA;
         } else if (modes[3].contains(packageName + ",")) {
+            state = STATE_DIALER;
+        } else if (modes[4].contains(packageName + ",")) {
             state = STATE_GAMING;
+        } else if (modes[5].contains(packageName + ",")) {
+            state = STATE_YOUTUBE;
         }
 
         return state;
@@ -137,11 +150,15 @@ public final class ThermalUtils {
             if (modes[0].contains(packageName + ",")) {
                 state = THERMAL_STATE_BENCHMARK;
             } else if (modes[1].contains(packageName + ",")) {
-                state = THERMAL_STATE_CAMERA;
+                state = THERMAL_STATE_BROWSER;
             } else if (modes[2].contains(packageName + ",")) {
-                state = THERMAL_STATE_DIALER;
+                state = THERMAL_STATE_CAMERA;
             } else if (modes[3].contains(packageName + ",")) {
+                state = THERMAL_STATE_DIALER;
+            } else if (modes[4].contains(packageName + ",")) {
                 state = THERMAL_STATE_GAMING;
+            } else if (modes[5].contains(packageName + ",")) {
+                state = THERMAL_STATE_YOUTUBE;
             }
         }
         FileUtils.writeLine(THERMAL_SCONFIG, state);
