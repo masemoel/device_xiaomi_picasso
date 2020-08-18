@@ -47,6 +47,10 @@ on init
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     start vendor.qseecomd
     start keymaster-4-0
+    
+    # Report max frequency to unity tasks
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
 
 on early-fs
     start vold
