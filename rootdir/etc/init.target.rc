@@ -110,6 +110,9 @@ on boot
     chmod 0644 /proc/cmdline
     chown system system /proc/cmdline
 
+on property:ro.boot.hwversion=*
+    setprop ro.boot.hardware.revision ${ro.boot.hwversion}
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
