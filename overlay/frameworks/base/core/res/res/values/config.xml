@@ -630,4 +630,7 @@
 
     <!-- Boost the brightness on a triple press of the power button  -->
     <integer name="config_triplePressOnPowerBehavior">2</integer>
+
+    <!-- Display has physical cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>
