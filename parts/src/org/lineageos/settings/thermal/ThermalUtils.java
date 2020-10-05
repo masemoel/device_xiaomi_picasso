@@ -74,8 +74,10 @@ public final class ThermalUtils {
 
     private String getValue() {
         String value = mSharedPrefs.getString(THERMAL_CONTROL, null);
-        String[] modes = value.split(":");
-        if (modes.length < 5) value = null;
+        if (value != null) {
+             String[] modes = value.split(":");
+             if (modes.length < 5) value = null;
+         }
 
         if (value == null || value.isEmpty()) {
             value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" +
