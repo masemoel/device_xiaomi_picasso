@@ -72,6 +72,7 @@ public class ProximitySensor implements SensorEventListener {
         boolean isNear = event.values[0] < mSensor.getMaximumRange();
         if (mSawNear && !isNear) {
             if (shouldPulse(event.timestamp)) {
+<<<<<<< HEAD
                 if (isRaiseToWake) {
                     mWakeLock.acquire(WAKELOCK_TIMEOUT_MS);
                     mPowerManager.wakeUp(SystemClock.uptimeMillis(),
@@ -79,6 +80,9 @@ public class ProximitySensor implements SensorEventListener {
                 } else {
                     DozeUtils.launchDozePulse(mContext);
                 }
+=======
+                DozeUtils.wakeOrLaunchDozePulse(mContext);
+>>>>>>> a6888e05... surya: parts: Allow to wake the screen instead of pulsing
             }
         } else {
             mInPocketTime = event.timestamp;
