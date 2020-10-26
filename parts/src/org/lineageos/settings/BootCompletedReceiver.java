@@ -25,14 +25,11 @@ import android.content.pm.PackageManager;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
-import org.lineageos.settings.utils.RefreshRateUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        // Refresh rate
-        RefreshRateUtils.setFPS(RefreshRateUtils.getRefreshRate(context));
         try {
             // We need to reset this setting to trigger an update in display service
             final float refreshRate = Settings.System.getFloat(context.getContentResolver(),
