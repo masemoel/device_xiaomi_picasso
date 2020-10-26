@@ -24,7 +24,6 @@ import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.utils.RefreshRateUtils;
-=======
 import org.lineageos.settings.device.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
