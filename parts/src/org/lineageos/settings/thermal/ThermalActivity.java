@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.thermal;
+package org.lineageos.settings.thermal;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-import org.lineageos.settings.device.utils.FileUtils;
+import org.lineageos.settings.utils.FileUtils;
 
 public class ThermalActivity extends PreferenceActivity {
 

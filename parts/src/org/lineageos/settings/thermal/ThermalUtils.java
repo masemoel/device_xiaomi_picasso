@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.thermal;
+package org.lineageos.settings.thermal;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import android.os.UserHandle;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.settings.device.utils.FileUtils;
+import org.lineageos.settings.utils.FileUtils;
 
 public final class ThermalUtils {
 
