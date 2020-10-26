@@ -17,12 +17,6 @@
     <string name="device_min_refresh_rate">Refresh Rate</string>
     <string name="device_pill_style_notch">Black-hole notch</string>
     <string name="msg_device_need_restart">Please, restart device for this to take effect.</string>
-</resources>
-    <string name="device_specific_settings_title">Device-specific settings</string>
-    <string name="device_specific_settings_summary">Settings specific to Redmi K30 5G</string>
-    <string name="device_min_refresh_rate">Minimum Refresh Rate</string>
-    <string name="device_pill_style_notch">Pill-style Notch</string>
-    <string name="msg_device_need_restart">Please restart device for this to take effect.</string>
 
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal Profiles</string>
@@ -34,14 +28,5 @@
     <string name="thermal_dialer">Dialer</string>
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_youtube">Youtube</string>
-
-    <!-- Thermal Profiles -->
-    <string name="thermal_title">Thermal Profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance, if it supports the kernel</string>
-    <string name="thermal_default">Default</string>
-    <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_camera">Camera</string>
-    <string name="thermal_dialer">Dialer</string>
-    <string name="thermal_gaming">Gaming</string>
 
 </resources>

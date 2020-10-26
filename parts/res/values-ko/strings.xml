@@ -12,10 +12,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="device_specific_settings_title">기기 전용 설정</string>
+    <string name="device_specific_settings_title">Xiaomi 설정</string>
     <string name="device_specific_settings_summary">Redmi K30 5G 전용 설정</string>
-    <string name="device_min_refresh_rate">최소 화면 재생률</string>
-    <string name="device_pill_style_notch">알약 모양 노치</string>
+    <string name="device_min_refresh_rate">화면 재생률</string>
+    <string name="device_pill_style_notch">검은 배경 노치</string>
     <string name="msg_device_need_restart">설정을 반영하려면 기기를 다시 시작하세요.</string>
 
     <!-- Thermal Profiles -->
