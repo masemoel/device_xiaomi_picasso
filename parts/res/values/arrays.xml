@@ -13,6 +13,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="device_refresh_rates">
+        <item>30 Hz</item>
+        <item>45 Hz</item>
         <item>60 Hz</item>
         <item>90 Hz</item>
         <item>120 Hz</item>
@@ -21,5 +23,7 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 </resources>
