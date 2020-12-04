@@ -45,9 +45,12 @@ using android::base::GetProperty;
 
 std::vector<std::string> ro_props_default_source_order = {
     "",
+    "build.",
+    "bootimage.",
     "odm.",
     "product.",
     "system.",
+    "system_ext.",
     "vendor.",
 };
 
@@ -105,6 +108,16 @@ static const char *snet_prop_key[] = {
     chmod("/sys/fs/selinux/policy", 0440);
 }
 
+void property_override_multifp(char const buildfp[], char const systemfp[],
+	char const bootimagefp[], char const vendorfp[], char const odmfp[], char const value[])
+{
+	property_override(buildfp, value);
+	property_override(systemfp, value);
+	property_override(bootimagefp, value);
+	property_override(vendorfp, value);
+    property_override(odmfp, value);
+}
+
 void vendor_load_properties() {
     const auto set_ro_product_prop = [](const std::string &source,
                                         const std::string &prop,
@@ -114,15 +127,14 @@ void vendor_load_properties() {
     };
 
     for (const auto &source : ro_props_default_source_order) {
-        set_ro_build_prop(source, "fingerprint",
-                           "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
-        property_override("ro.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
-        property_override("ro.bootimage.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
         set_ro_product_prop(source, "brand", "Redmi");
         set_ro_product_prop(source, "device", "picasso");
         set_ro_product_prop(source, "model", "Redmi K30 5G");
     }
-    property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+    property_override("ro.build.description", "coral-user 11 RP1A.201105.002 6869500 release-keys");
+    property_override("ro.oem_unlock_supported", "0");
+    property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
+	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
 
      // Workaround SafetyNet
     workaround_snet_properties();
