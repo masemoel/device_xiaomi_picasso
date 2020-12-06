@@ -34,13 +34,14 @@
 
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <sys/_system_properties.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
 
 std::vector<std::string> ro_props_default_source_order = {
     "",
@@ -60,6 +61,50 @@ void property_override(char const prop[], char const value[], bool add = true) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+	/* From Magisk@jni/magiskhide/hide_utils.c */
+static const char *snet_prop_key[] = {
+    "ro.boot.vbmeta.device_state",
+    "ro.boot.verifiedbootstate",
+    "ro.boot.flash.locked",
+    "ro.boot.selinux",
+    "ro.boot.veritymode",
+    "ro.boot.warranty_bit",
+    "ro.warranty_bit",
+    "ro.debuggable",
+    "ro.secure",
+    "ro.build.type",
+    "ro.build.tags",
+    "ro.build.selinux",
+    NULL
+};
+
+ static const char *snet_prop_value[] = {
+    "locked",
+    "green",
+    "1",
+    "enforcing",
+    "enforcing",
+    "0",
+    "0",
+    "0",
+    "1",
+    "user",
+    "release-keys",
+    "1",
+    NULL
+};
+
+ static void workaround_snet_properties() {
+
+     // Hide all sensitive props
+    for (int i = 0; snet_prop_key[i]; ++i) {
+        property_override(snet_prop_key[i], snet_prop_value[i]);
+    }
+
+     chmod("/sys/fs/selinux/enforce", 0640);
+    chmod("/sys/fs/selinux/policy", 0440);
+}
+
 void vendor_load_properties() {
     const auto set_ro_build_prop = [](const std::string &source,
                                       const std::string &prop,
@@ -76,9 +121,16 @@ void vendor_load_properties() {
     };
 
     for (const auto &source : ro_props_default_source_order) {
+        set_ro_build_prop(source, "fingerprint",
+                           "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+        property_override("ro.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+        property_override("ro.bootimage.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
         set_ro_product_prop(source, "brand", "Redmi");
         set_ro_product_prop(source, "device", "picasso");
         set_ro_product_prop(source, "model", "Redmi K30 5G");
     }
     property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+
+     // Workaround SafetyNet
+    workaround_snet_properties();
 }
