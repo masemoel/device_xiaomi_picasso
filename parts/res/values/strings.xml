@@ -70,4 +70,12 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- Refresh Rates -->
+    <string name="fps_title">Refresh rate per app</string>
+    <string name="fps_summary">Add a custom refresh rate for individual apps</string>
+    <string name="fps_120">120 hz</string>
+    <string name="fps_90">90 hz</string>
+    <string name="fps_60">60 hz</string>
+    <string name="fps_30">30 hz</string>
 </resources>
