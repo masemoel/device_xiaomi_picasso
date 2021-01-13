@@ -76,7 +76,6 @@ constexpr const char *BUILD_FINGERPRINT[] = {
 
 constexpr const char *CLIENT_ID[] = {
     "android-xiaomi",
-    "android-xiaomi-rev1",
 };
 
 void check_device()
@@ -114,7 +113,7 @@ void property_override(char const prop[], char const value[], bool add = true) {
     __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void load_props(const char *model, bool is_or = false, bool is_48 = false) {
+void load_props(const char *model, bool is_48 = false) {
   const auto ro_prop_override = [](const char *source, const char *prop,
                                    const char *value, bool product) {
     std::string prop_name = "ro.";
@@ -145,7 +144,6 @@ void load_props(const char *model, bool is_or = false, bool is_48 = false) {
   ro_prop_override(nullptr, "description", BUILD_DESCRIPTION[0], false);
   ro_prop_override(nullptr, "product", model, false);
   ro_prop_override(nullptr, "com.google.clientidbase", CLIENT_ID[0], false);
-  ro_prop_override(nullptr, "com.google.clientidbase.ms", CLIENT_ID[1], false);
   property_override("ro.oem_unlock_supported", "0");
   property_override("ro.boot.verifiedbootstate", "green");
   property_override("ro.debuggable", "0");
@@ -168,8 +166,8 @@ void vendor_load_properties() {
   variant = GetProperty("ro.product.vendor.name", "");
 
   if (variant == "picasso") {
-    load_props(DEVICES[0], true, false);
+    load_props(DEVICES[0], false);
   } else if (variant == "picasso_48m") {
-    load_props(DEVICES[1], false, true);
+    load_props(DEVICES[1], true);
   }
 }
