@@ -998,6 +998,9 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 
+# Power-off charging daemon
+bin/charger
+
 # QCC
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
 vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
