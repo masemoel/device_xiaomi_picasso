@@ -19,8 +19,13 @@ package org.lineageos.settings;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.PowerManager;
+import android.content.SharedPreferences;
+import android.util.Log;
 
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.PowerSaveModeChangeReceiver;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.fps.FPSUtils;
@@ -33,6 +38,10 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DiracUtils.initialize(context);
         // Refresh rate
         RefreshRateUtils.setFPS(RefreshRateUtils.getRefreshRate(context));
+        IntentFilter filter = new IntentFilter();
+        PowerSaveModeChangeReceiver receiver = new PowerSaveModeChangeReceiver();
+        filter.addAction(PowerManager.ACTION_POWER_SAVE_MODE_CHANGED);
+        context.getApplicationContext().registerReceiver(receiver, filter);
 
         // Doze
         DozeUtils.checkDozeService(context);

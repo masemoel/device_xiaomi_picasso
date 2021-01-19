@@ -14,7 +14,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="device_specific_settings_title">XiaomiParts</string>
     <string name="device_specific_settings_summary">Specific settings for Redmi K30 5G.</string>
+    <string name="device_refresh_rate">DISPLAY REFRESH RATE</string>
+    <string name="device_cutout">NOTCH/CUTOUT</string>
     <string name="device_min_refresh_rate">Refresh Rate</string>
+    <string name="device_power_save_refresh_rate">Battery saver refresh rate</string>
+    <string name="device_power_save_refresh_rate_switch">Automatically lower refresh rate when battery saver is enabled.</string>
     <string name="device_pill_style_notch">Black-hole notch</string>
     <string name="msg_device_need_restart">Please, restart systemUI for this to take effect.</string>
 

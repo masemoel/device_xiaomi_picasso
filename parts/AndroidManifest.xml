@@ -54,6 +54,12 @@
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.Main">
         </activity>
+        
+        <receiver android:name=".PowerSaveModeChangeReceiver">
+            <intent-filter>
+                <action android:name="android.os.action.POWER_SAVE_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
 
         <service android:name=".doze.DozeService"
                  android:permission="XiaomiDozeService">

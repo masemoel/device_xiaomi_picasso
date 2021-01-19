@@ -16,8 +16,10 @@
 
 package org.lineageos.settings;
 
+import android.content.Context;
 import android.content.om.IOverlayManager;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.widget.Toast;
@@ -34,11 +36,19 @@ public class DevicePreferenceFragment extends PreferenceFragment {
 
     private static final String KEY_MIN_REFRESH_RATE = "pref_min_refresh_rate";
     private static final String KEY_PILL_STYLE_NOTCH = "pref_pill_style_notch";
+<<<<<<< HEAD
+=======
+    private static final String KEY_POWER_SAVE_REFRESH_RATE = "pref_power_save_refresh_rate";
+    private static final String KEY_POWER_SAVE_REFRESH_RATE_SWITCH = "pref_power_save_refresh_rate_switch";
+>>>>>>> 12575dad... picasso: parts: Implement auto-lowering refresh rate on battery saver
 
     private IOverlayManager mOverlayService;
+    private PowerManager mPowerManagerService;
 
     private ListPreference mPrefMinRefreshRate;
     private SwitchPreference mPrefPillStyleNotch;
+    private ListPreference mPrefPowerSaveRefreshRate;
+    private SwitchPreference mPrefPowerSaveRefreshRateSwitch;
 
 
     @Override
@@ -46,6 +56,7 @@ public class DevicePreferenceFragment extends PreferenceFragment {
         super.onActivityCreated(savedInstanceState);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         mOverlayService = IOverlayManager.Stub.asInterface(ServiceManager.getService("overlay"));
+        mPowerManagerService = (PowerManager) getContext().getSystemService(Context.POWER_SERVICE);
     }
 
     @Override
@@ -55,13 +66,29 @@ public class DevicePreferenceFragment extends PreferenceFragment {
         mPrefMinRefreshRate.setOnPreferenceChangeListener(PrefListener);
         mPrefPillStyleNotch = (SwitchPreference) findPreference(KEY_PILL_STYLE_NOTCH);
         mPrefPillStyleNotch.setOnPreferenceChangeListener(PrefListener);
+        mPrefPowerSaveRefreshRate = (ListPreference) findPreference(KEY_POWER_SAVE_REFRESH_RATE);
+        mPrefPowerSaveRefreshRate.setOnPreferenceChangeListener(PrefListener);
+        mPrefPowerSaveRefreshRateSwitch = (SwitchPreference) findPreference(KEY_POWER_SAVE_REFRESH_RATE_SWITCH);
+        mPrefPowerSaveRefreshRateSwitch.setOnPreferenceChangeListener(PrefListener);
     }
 
     @Override
     public void onResume() {
         super.onResume();
+<<<<<<< HEAD
         mPrefMinRefreshRate.setValueIndex(RefreshRateUtils.getRefreshRate(getActivity()));
         mPrefMinRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
+=======
+        updateValuesAndSummaries();
+    }
+
+    private void updateValuesAndSummaries() {
+        mPrefMinRefreshRate.setValue(Integer.toString(RefreshRateUtils.getRefreshRate(getActivity())));
+        mPrefMinRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
+        mPrefPowerSaveRefreshRate.setValue(Integer.toString(RefreshRateUtils.getPowerSaveRefreshRate(getActivity())));
+        mPrefPowerSaveRefreshRate.setSummary(mPrefPowerSaveRefreshRate.getEntry());
+        mPrefPowerSaveRefreshRateSwitch.setChecked(RefreshRateUtils.getPowerSaveRefreshRateSwitch(getActivity()));
+>>>>>>> 12575dad... picasso: parts: Implement auto-lowering refresh rate on battery saver
         try {
             mPrefPillStyleNotch.setChecked(
                     !mOverlayService.getOverlayInfo(OVERLAY_NO_FILL_PACKAGE, 0).isEnabled());
@@ -78,9 +105,30 @@ public class DevicePreferenceFragment extends PreferenceFragment {
 
                     if (KEY_MIN_REFRESH_RATE.equals(key)) {
                         RefreshRateUtils.setRefreshRate(getActivity(), Integer.parseInt((String) value));
-                        RefreshRateUtils.setFPS(Integer.parseInt((String) value));
-                        mPrefMinRefreshRate.setValueIndex(Integer.parseInt((String) value));
-                        mPrefMinRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
+                        if (!mPowerManagerService.isPowerSaveMode()) {
+                            RefreshRateUtils.setFPS(Integer.parseInt((String) value));
+                        }
+                        int minRefreshRateIndex = mPrefMinRefreshRate
+                                .findIndexOfValue((String) value);
+                        mPrefMinRefreshRate
+                                .setSummary(mPrefMinRefreshRate.getEntries()[minRefreshRateIndex]);
+                    } else if (KEY_POWER_SAVE_REFRESH_RATE.equals(key)) {
+                        RefreshRateUtils.setPowerSaveRefreshRate(getActivity(), Integer.parseInt((String) value));
+                        if (mPowerManagerService.isPowerSaveMode()) {
+                            RefreshRateUtils.setFPS(Integer.parseInt((String) value));
+                        }
+                        int powerSaveRefreshRateIndex = mPrefPowerSaveRefreshRate
+                                .findIndexOfValue((String) value);
+                        mPrefPowerSaveRefreshRate
+                                .setSummary(mPrefPowerSaveRefreshRate.getEntries()[powerSaveRefreshRateIndex]);
+                    } else if (KEY_POWER_SAVE_REFRESH_RATE_SWITCH.equals(key)) {
+                        RefreshRateUtils.setPowerSaveRefreshRateSwitch(getActivity(), (boolean) value);
+                        if ((boolean) value && mPowerManagerService.isPowerSaveMode()) {
+                            RefreshRateUtils.setFPS(RefreshRateUtils.getPowerSaveRefreshRate(getActivity()));
+                        } else {
+                            RefreshRateUtils.setFPS(RefreshRateUtils.getRefreshRate(getActivity()));
+                        }
+                        mPrefPowerSaveRefreshRate.setEnabled((boolean) value ? true : false);
                     } else if (KEY_PILL_STYLE_NOTCH.equals(key)) {
                         try {
                             mOverlayService.setEnabled(

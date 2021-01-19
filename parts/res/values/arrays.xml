@@ -107,4 +107,14 @@
         <item>"0,4,2,0,-2,-2,4"</item>
         <item>"2,0,0,-2,-4,0,0"</item>
     </string-array>
+    
+    <string-array name="device_power_save_refresh_rates">
+        <item>50 Hz</item>
+        <item>60 Hz</item>
+    </string-array>
+
+    <string-array name="device_power_save_refresh_rates_val">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
