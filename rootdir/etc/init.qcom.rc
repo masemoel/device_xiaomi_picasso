@@ -400,6 +400,9 @@ service nqnfcinfo /system/vendor/bin/nqnfcinfo
     user system
     oneshot
 
+service vendor.light-qti /system/bin/true
+    disabled
+
 service iop /system/vendor/bin/iop
     class main
     user root

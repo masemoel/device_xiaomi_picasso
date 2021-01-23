@@ -1,4 +1,4 @@
-<manifest version="1.0" type="device">
+<manifest version="1.0" type="framework">
     <hal format="aidl">
         <name>android.hardware.light</name>
         <fqname>ILights/default</fqname>

@@ -18,7 +18,6 @@ cc_binary {
     relative_install_path: "hw",
     init_rc: ["aidl/android.hardware.lights.xiaomi_picasso.rc"],
     vintf_fragments: ["aidl/android.hardware.lights.xiaomi_picasso.xml"],
-    vendor: true,
     shared_libs: [
         "libbase",
         "liblog",
