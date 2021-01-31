@@ -16,6 +16,34 @@
      limitations under the License.
 -->
 <resources>
+    <!--    Device specific  -->
+    <string name="device_specific_settings_title">设备特定设置</string>
+    <string name="device_specific_settings_summary">调整有关 Redmi K30 5G 的特定设置</string>
+    <string name="device_min_refresh_rate">最低刷新率</string>
+    <string name="device_pill_style_notch">启用药丸屏</string>
+
+    <!--  DT2W    -->
+    <string name="dt2w_enable_title">点按唤醒 </string>
+    <string name="dt2w_enable_summary">在锁屏状态下轻触两次即可唤醒屏幕</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">温度优化</string>
+    <string name="thermal_summary">调整您的应用以获得最佳性能</string>
+    <string name="thermal_default">默认程序</string>
+    <string name="thermal_benchmark">跑分程序</string>
+    <string name="thermal_camera">相机程序</string>
+    <string name="thermal_dialer">拨号程序</string>
+    <string name="thermal_gaming">游戏</string>
+    <string name="thermal_streaming">流媒体/直播</string>
+
+    <!-- Refresh Rates -->
+    <string name="fps_title">刷新率</string>
+    <string name="fps_summary">调整各个应用的刷新率</string>
+    <string name="fps_120">120 赫兹</string>
+    <string name="fps_90">90 赫兹</string>
+    <string name="fps_60">60 赫兹</string>
+    <string name="fps_30">30 赫兹</string>
+     
     <!-- Dirac settings -->
     <string name="dirac_title">使用米音提升音质</string>
     <string name="dirac_summary">米音</string>
