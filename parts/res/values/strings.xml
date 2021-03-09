@@ -12,18 +12,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="device_specific_settings_title">XiaomiParts</string>
-    <string name="device_specific_settings_summary">Specific settings for Redmi K30 5G.</string>
-    <string name="device_refresh_rate">DISPLAY REFRESH RATE</string>
-    <string name="device_cutout">NOTCH/CUTOUT</string>
-    <string name="device_min_refresh_rate">Refresh Rate</string>
-    <string name="device_power_save_refresh_rate">Battery saver refresh rate</string>
-    <string name="device_power_save_refresh_rate_switch">Automatically lower refresh rate when battery saver is enabled.</string>
-    <string name="device_pill_style_notch">Black-hole notch</string>
-    <string name="msg_device_need_restart">Please, restart systemUI for this to take effect.</string>
+    <string name="device_specific_settings_title">Notch style</string>
+    <string name="device_specific_settings_summary">Switch between the pill and the separated cameras style.</string>
+    <string name="device_pill_style_notch">Pill-style notch</string>
 
     <!-- Thermal Profiles -->
-    <string name="thermal_title">Thermal Profiles</string>
+    <string name="thermal_title">Thermal profiles</string>
     <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance.</string>
     <string name="thermal_default">Default</string>
     <string name="thermal_benchmark">Benchmark</string>
@@ -34,7 +28,7 @@
     <string name="thermal_youtube">YouTube</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_title">Mi Sound Enhancer</string>
+    <string name="dirac_title">Mi sound enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Headset type</string>
     <string name="dirac_hifi_enable_title"> Enable Hi-fi</string>
@@ -76,16 +70,8 @@
     <string name="dirac_preset_metal">Metal</string>
     <string name="dirac_preset_bass_booster">Bass Booster</string>
 
-    <!-- Refresh Rates -->
-    <string name="fps_title">Refresh rate per app</string>
-    <string name="fps_summary">Add a custom refresh rate for individual apps</string>
-    <string name="fps_120">120 hz</string>
-    <string name="fps_90">90 hz</string>
-    <string name="fps_60">60 hz</string>
-    <string name="fps_30">30 hz</string>
-
      <!-- Dirac QS tile -->
-    <string name="dirac_qs_tile_title">Mi Sound Enhancer</string>
+    <string name="dirac_qs_tile_title">Mi sound enhancer</string>
 
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Clear speaker</string>
@@ -93,7 +79,7 @@
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
 
     <!-- Touch Control Settings -->
-    <string name="touch_control_title">Touch Control</string>
+    <string name="touch_control_title">Touch control</string>
     <string name="touch_game_mode_title">Enable gaming mode</string>
     <string name="touch_game_mode_summary">Activate manual touchscreen feature controls for a better gaming experience</string>
     <string name="touch_response_title">Touch response</string>
