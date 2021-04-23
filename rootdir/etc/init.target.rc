@@ -143,6 +143,11 @@ service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
     class core
     oneshot
 
+# Perf tuning
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
+    setprop dalvik.vm.dex2oat-threads 6
+
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
