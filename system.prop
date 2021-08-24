@@ -10,6 +10,9 @@ pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=quicken
 
+# Disable blur on app launch
+ro.launcher.blur.appLaunch=0
+
 # Display
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.has_wide_color_display=true
