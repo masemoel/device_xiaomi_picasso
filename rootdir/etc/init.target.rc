@@ -237,3 +237,24 @@ on property:vendor.post_boot.parsed=1
     # Enable schedutil predicted-load boosting
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/pl 1
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/pl 1
+
+on property:sys.boot_completed=1
+    # Set 512 for >= 4GB targets.
+    write /sys/block/dm-0/queue/read_ahead_kb 512
+    write /sys/block/dm-1/queue/read_ahead_kb 512
+    write /sys/block/dm-2/queue/read_ahead_kb 512
+    write /sys/block/dm-3/queue/read_ahead_kb 512
+    write /sys/block/dm-4/queue/read_ahead_kb 512
+    write /sys/block/dm-5/queue/read_ahead_kb 512
+
+    # Disable wsf for all targets beacause we are using efk.
+    # wsf Range : 1..1000 So set to bare minimum value 1.
+    write /proc/sys/vm/watermark_scale_factor 1
+
+    # Set allocstall_threshold to 0 for all targets.
+    write /sys/module/vmpressure/parameters/allocstall_threshold 0
+
+    # ZRAM may use more memory than it saves if SLAB_STORE_USER
+    # debug option is enabled.
+    write /sys/kernel/slab/zs_handle/store_user 0
+    write /sys/kernel/slab/zspage/store_user 0
