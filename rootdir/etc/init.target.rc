@@ -83,6 +83,9 @@ on boot
     setprop vendor.usb.controller a600000.dwc3
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
+# Prevents permission denied error for telephony
+    chmod 0644 /proc/cmdline
+    chown system system /proc/cmdline
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
