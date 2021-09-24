@@ -201,5 +201,10 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM7250
 
+# System
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+ro.config.dha_tunnable=1
+
 # Time
 persist.timed.enable=true
