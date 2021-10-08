@@ -20,3 +20,9 @@ pm.dexopt.boot=verify
 pm.dexopt.first-boot=verify
 pm.dexopt.install=speed-profile
 ro.sys.fw.dex2oat_thread_count=8
+
+# Display
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
