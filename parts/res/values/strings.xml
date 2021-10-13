@@ -28,6 +28,7 @@
     <string name="thermal_youtube">YouTube</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Enable enhancer</string>
     <string name="dirac_title">Mi sound enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Headset type</string>
@@ -88,4 +89,7 @@
     <string name="touch_sensitivity_summary">Control touch sensitivity for repeated taps</string>
     <string name="touch_resistant_title">Touch-resistant area</string>
     <string name="touch_resistant_summary">Reduce touch sensitivity near the edges to avoid triggering touch controls</string>
+
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Use ambient display</string>
 </resources>

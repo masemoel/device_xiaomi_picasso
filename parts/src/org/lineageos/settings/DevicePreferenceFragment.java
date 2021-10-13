@@ -26,6 +26,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
 import androidx.preference.SwitchPreference;
+import android.app.ActionBar;
+import android.app.Activity;
 
 public class DevicePreferenceFragment extends PreferenceFragment {
     private static final String OVERLAY_NO_FILL_PACKAGE = "org.lineageos.overlay.notch.nofill";
@@ -40,7 +42,10 @@ public class DevicePreferenceFragment extends PreferenceFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+        final ActionBar actionBar = getActivity().getActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
         mOverlayService = IOverlayManager.Stub.asInterface(ServiceManager.getService("overlay"));
     }
 
