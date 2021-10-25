@@ -83,6 +83,10 @@ on boot
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/system-background/cpus 2-5
     write /dev/cpuset/restricted/cpus 2-5
+# Set default thermal profiles    
+    chmod 0666 /sys/class/thermal/thermal_message/temp_state
+    chown system system /sys/class/thermal/thermal_message/temp_state
+    write /sys/class/thermal/thermal_message/sconfig 0
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
