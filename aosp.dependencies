@@ -1,0 +1,18 @@
+[
+  {
+    "repository"  : "kernel_xiaomi_sm8250",
+    "target_path" : "kernel/xiaomi/picasso"
+  },
+  {
+    "repository"  : "vendor_xiaomi_picasso",
+    "target_path" : "vendor/xiaomi/picasso",
+    "remote"      : "pixel-devices-blobs",
+    "branch"      : "twelve"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "lineage-19.0"
+  }
+]
