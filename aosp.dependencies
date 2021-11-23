@@ -14,5 +14,11 @@
     "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "branch": "lineage-19.0"
+  },
+  {
+    "repository"   : "vendor_xiaomi_sdm845-common-extra",
+    "target_path"  : "vendor/xiaomi/sdm845-common-extra",
+    "branch"       : "twelve",
+    "remote"       : "pixel-devices-blobs"
   }
 ]
