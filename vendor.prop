@@ -49,7 +49,7 @@ vendor.audio.volume.headset.gain.depcal=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-persist.vendor.qcom.bluetooth.soc=hastings
+persist.vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=true
