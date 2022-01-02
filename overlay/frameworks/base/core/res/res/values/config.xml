@@ -764,4 +764,7 @@
 
     <!-- Pocket lock -->
     <bool name="config_pocketModeSupported">true</bool>
+
+    <!-- Whether device supports an gaming mode profiles -->
+    <bool name="config_gamingmode_performance">true</bool>
 </resources>
