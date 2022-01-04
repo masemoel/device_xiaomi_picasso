@@ -34,6 +34,9 @@ persist.vendor.radio.vdp_on_ims_cap=1
 mm.enable.smoothstreaming=true
 ro.media.recorder-max-base-layer-fps=60
 
+# Misc
+persist.sys.binary_xml=false
+
 # RIL
 persist.sys.fflag.override.settings_provider_model=false
 ril.subscription.types=NV,RUIM
