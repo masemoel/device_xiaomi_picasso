@@ -1,7 +1,9 @@
 [
   {
-    "repository"  : "kernel_xiaomi_sm8250",
-    "target_path" : "kernel/xiaomi/picasso"
+    "repository"   : "kernel_xiaomi_gauguin",
+    "target_path"  : "kernel/xiaomi/gauguin",
+    "remote"       : "pixel-devices",
+    "branch"       : "twelve"
   },
   {
     "repository"  : "vendor_xiaomi_picasso",
