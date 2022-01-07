@@ -200,10 +200,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
-# DTB
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
@@ -280,18 +276,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
-
-# Kernel Modules
-KERNEL_MODULES_DIR := $(LOCAL_PATH)/prebuilt/modules
-
-ifneq ($(PRODUCT_TARGET_VNDK_VERSION),)
-KERNEL_MODULES_COPY := $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/lib/modules
-else
-KERNEL_MODULES_COPY := $(TARGET_COPY_OUT_VENDOR)/lib/modules
-endif
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(KERNEL_MODULES_DIR),$(KERNEL_MODULES_COPY))
 
 # KeyHandler
 PRODUCT_PACKAGES += \
