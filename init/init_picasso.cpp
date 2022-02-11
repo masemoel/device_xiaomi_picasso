@@ -149,9 +149,6 @@ void load_props(const char *model, bool is_48 = false) {
   property_override("ro.debuggable", "0");
   property_override("ro.build.type", "user");
 
-     chmod("/sys/fs/selinux/enforce", 0640);
-    chmod("/sys/fs/selinux/policy", 0440);
-
   check_device();
   SetProperty("dalvik.vm.heapstartsize", heapstartsize);
   SetProperty("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
