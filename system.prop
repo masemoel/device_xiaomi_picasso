@@ -10,6 +10,9 @@ vendor.display.idle_time=1100
 debug.sf.disable_backpressure=1
 qemu.sf.lcd_density=440
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
