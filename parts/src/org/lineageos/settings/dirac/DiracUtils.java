@@ -66,4 +66,8 @@ public final class DiracUtils {
          AudioManager audioManager = mContext.getSystemService(AudioManager.class);
          return audioManager.getParameters("hifi_mode").contains("true");
     }
+
+    protected static void setScenario(int sceneInt) {
+        mDiracSound.setScenario(sceneInt);
+    }
 }
