@@ -14,7 +14,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="device_refresh_rates">
         <item>30 Hz</item>
-        <item>45 Hz</item>
+        <item>50 Hz</item>
         <item>60 Hz</item>
         <item>90 Hz</item>
         <item>120 Hz</item>

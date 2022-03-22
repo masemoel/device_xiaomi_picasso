@@ -20,7 +20,7 @@
 
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal Profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance, if it supports the kernel</string>
+    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance.</string>
     <string name="thermal_default">Default</string>
     <string name="thermal_benchmark">Benchmark</string>
     <string name="thermal_browser">Browser</string>
