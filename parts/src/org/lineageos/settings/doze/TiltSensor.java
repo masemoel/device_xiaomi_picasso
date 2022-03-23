@@ -89,7 +89,7 @@ public class TiltSensor implements SensorEventListener {
                 mPowerManager.wakeUp(SystemClock.uptimeMillis(),
                         PowerManager.WAKE_REASON_GESTURE, TAG);
             } else {
-                DozeUtils.launchDozePulse(mContext);
+                DozeUtils.wakeOrLaunchDozePulse(mContext);
             }
         }
     }
@@ -149,7 +149,7 @@ public class TiltSensor implements SensorEventListener {
         public void onTrigger(TriggerEvent event) {
             if (DEBUG) Log.d(TAG, "triggered");
 
-            DozeUtils.launchDozePulse(mContext);
+            DozeUtils.wakeOrLaunchDozePulse(mContext);
             if (!mSensorManager.requestTriggerSensor(mGlanceListener, mSensor)) {
                 throw new RuntimeException("Failed to requestTriggerSensor for sensor " + mSensor);
             }

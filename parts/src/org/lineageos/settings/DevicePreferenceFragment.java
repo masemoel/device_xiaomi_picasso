@@ -36,11 +36,8 @@ public class DevicePreferenceFragment extends PreferenceFragment {
 
     private static final String KEY_MIN_REFRESH_RATE = "pref_min_refresh_rate";
     private static final String KEY_PILL_STYLE_NOTCH = "pref_pill_style_notch";
-<<<<<<< HEAD
-=======
     private static final String KEY_POWER_SAVE_REFRESH_RATE = "pref_power_save_refresh_rate";
     private static final String KEY_POWER_SAVE_REFRESH_RATE_SWITCH = "pref_power_save_refresh_rate_switch";
->>>>>>> 12575dad... picasso: parts: Implement auto-lowering refresh rate on battery saver
 
     private IOverlayManager mOverlayService;
     private PowerManager mPowerManagerService;
@@ -75,20 +72,11 @@ public class DevicePreferenceFragment extends PreferenceFragment {
     @Override
     public void onResume() {
         super.onResume();
-<<<<<<< HEAD
-        mPrefMinRefreshRate.setValueIndex(RefreshRateUtils.getRefreshRate(getActivity()));
-        mPrefMinRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
-=======
-        updateValuesAndSummaries();
-    }
-
-    private void updateValuesAndSummaries() {
         mPrefMinRefreshRate.setValue(Integer.toString(RefreshRateUtils.getRefreshRate(getActivity())));
         mPrefMinRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
         mPrefPowerSaveRefreshRate.setValue(Integer.toString(RefreshRateUtils.getPowerSaveRefreshRate(getActivity())));
         mPrefPowerSaveRefreshRate.setSummary(mPrefPowerSaveRefreshRate.getEntry());
         mPrefPowerSaveRefreshRateSwitch.setChecked(RefreshRateUtils.getPowerSaveRefreshRateSwitch(getActivity()));
->>>>>>> 12575dad... picasso: parts: Implement auto-lowering refresh rate on battery saver
         try {
             mPrefPillStyleNotch.setChecked(
                     !mOverlayService.getOverlayInfo(OVERLAY_NO_FILL_PACKAGE, 0).isEnabled());
