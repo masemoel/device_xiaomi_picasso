@@ -42,4 +42,7 @@
     
     <!-- Custom pickup sensor for doze customization -->
     <string name="pickup_sensor" translatable="false">xiaomi.sensor.pickup</string>
+
+    <!-- Whether or not homepage should display user's account avatar -->
+    <bool name="config_show_avatar_in_homepage">true</bool>
 </resources>
