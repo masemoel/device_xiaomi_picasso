@@ -1,6 +1,6 @@
 ![crDroid](http://i.imgur.com/BE3pE0l.png "crDroid")
 
-crDroid 8 (A12/S) for Redmi K30 5G (picasso)
+crDroid 8.x (A12.1/S) for Redmi K30 5G (picasso)
 ======================================
 
 # How to build
