@@ -15,6 +15,11 @@
  * limitations under the License.
 */
 -->
+<intent-filter>
+    <action android:name="com.android.settings.device.DOZE_SETTINGS" />
+    <category android:name="android.intent.category.DEFAULT" />
+</intent-filter>
+
 <resources>
     <!-- Defines the custom proximity sensor used by various OEMs like OnePlus-->
     <string name="config_custom_tilt">xiaomi.sensor.pickup</string>
