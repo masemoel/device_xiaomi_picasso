@@ -30,7 +30,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    hardware/xiaomi
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
