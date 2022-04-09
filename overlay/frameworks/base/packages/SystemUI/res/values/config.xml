@@ -68,4 +68,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- Preferred refresh rate at keyguard, if supported by the display -->
     <integer name="config_keyguardRefreshRate">120</integer>
+
+    <!-- Unify back gesture vibration with system wide haptics -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 </resources>
