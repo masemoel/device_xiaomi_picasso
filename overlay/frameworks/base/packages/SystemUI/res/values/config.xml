@@ -79,4 +79,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          edit the input before it is sent to the app. Developers can override this via
          RemoteInput.Builder.setEditChoicesBeforeSending. -->
     <bool name="config_smart_replies_in_notifications_edit_choices_before_sending">true</bool>
+    
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleStatusIconContainer">17</integer>
+    <integer name="config_maxVisibleNotificationIcons">25</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">25</integer>
 </resources>
