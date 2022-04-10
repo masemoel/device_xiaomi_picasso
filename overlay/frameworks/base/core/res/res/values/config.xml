@@ -585,4 +585,7 @@
     <!-- LED overlays -->
     <bool name="config_multiColorBatteryLed">false</bool>
     <bool name="config_FastChargingLedSupported">true</bool>
+
+    <!-- Live display -->
+    <bool name="config_liveDisplayAvailable">true</bool>
 </resources>
