@@ -581,4 +581,8 @@
     <!-- Wi-Fi 802.11r support -->
     <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
+    <!-- LED overlays -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+    <bool name="config_FastChargingLedSupported">true</bool>
 </resources>
