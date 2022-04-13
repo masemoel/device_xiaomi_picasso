@@ -655,4 +655,7 @@
 
     <!-- If face authentication sends the user directly to home/last open app, or stays on keyguard -->
     <bool name="config_faceAuthDismissesKeyguard">true</bool>
+
+    <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
 </resources>
