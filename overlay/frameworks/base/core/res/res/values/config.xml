@@ -633,4 +633,17 @@
 
     <!-- Display has physical cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
+
+    <!-- If set, this will force all windows to draw the status bar background, including the apps
+         that have not requested doing so (via the WindowManager.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS
+         flag). -->
+    <bool name="config_forceWindowDrawsStatusBarBackground">true</bool>
+
+    <!-- Controls the opacity of the navigation bar depending on the visibility of the
+         various workspace stacks.
+         0 - Nav bar is always translucent when the freeform stack is visible, otherwise always
+         opaque.
+         1 - Nav bar is always opaque when either the freeform stack or docked stack is visible.
+         -->
+    <integer name="config_navBarOpacityMode">0</integer>
 </resources>
