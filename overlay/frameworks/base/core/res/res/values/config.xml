@@ -725,4 +725,7 @@
 
     <!-- Force apps to assume that you don't have a menu key (useful for older apps) -->
     <integer name="config_overrideHasPermanentMenuKey">2</integer>
+
+    <!-- Give Wellbeing trust permissions -->
+    <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
 </resources>
