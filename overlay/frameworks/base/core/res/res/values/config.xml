@@ -646,4 +646,7 @@
          1 - Nav bar is always opaque when either the freeform stack or docked stack is visible.
          -->
     <integer name="config_navBarOpacityMode">0</integer>
+
+    <!-- All-rotations overlay -->
+    <bool name="config_allowAllRotations">true</bool>
 </resources>
