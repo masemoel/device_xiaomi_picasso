@@ -734,4 +734,7 @@
     <bool name="config_proximityCheckOnWake">true</bool>
     <integer name="config_proximityCheckTimeout">3000</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">120</integer>
 </resources>
