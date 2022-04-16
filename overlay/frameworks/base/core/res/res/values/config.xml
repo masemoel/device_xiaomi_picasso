@@ -761,4 +761,7 @@
             2 - Global actions menu
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
+
+    <!-- Pocket lock -->
+    <bool name="config_pocketModeSupported">true</bool>
 </resources>
