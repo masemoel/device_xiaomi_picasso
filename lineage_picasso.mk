@@ -14,7 +14,6 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 # Inherit some common crDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
@@ -29,3 +28,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
