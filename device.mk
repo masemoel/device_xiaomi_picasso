@@ -16,6 +16,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
 
+# Inherit Lawnchair repository if available.
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 # Hotword blobs
 $(call inherit-product, vendor/xiaomi/google/google.mk)
 
