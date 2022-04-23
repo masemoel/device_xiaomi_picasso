@@ -38,5 +38,9 @@ TARGET_SUPPORT_FACE_UNLOCK := true
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Maintainter
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.maintainer.name=masemoel
+
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
