@@ -761,4 +761,7 @@
 
     <!-- Whether device supports an gaming mode profiles -->
     <bool name="config_gamingmode_performance">true</bool>
+
+    <!-- Whether to force enable multi resolution configuration for camera -->
+    <bool name="config_forceMultiResolution">true</bool>
 </resources>
