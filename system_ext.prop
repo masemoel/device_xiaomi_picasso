@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+
 # Camera
 persist.vendor.camera.expose.aux=1
 
