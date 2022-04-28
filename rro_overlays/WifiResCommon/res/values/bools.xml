@@ -12,9 +12,6 @@
          is no longer indicative, and a separate config now exists for each band -->
     <bool name="config_wifi5ghzSupport">true</bool>
 
-    <!-- Wifi driver supports 6GHz band for softap -->
-    <bool name="config_wifiSoftap6ghzSupported">true</bool>
-
     <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
     <bool name="config_wifiSoftapAcsIncludeDfs">true</bool>
 
