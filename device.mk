@@ -230,6 +230,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+# DTB
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/dtb-12.5.9:dtb.img
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
