@@ -36,6 +36,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
     hardware/xiaomi
 
 # Boot animation
