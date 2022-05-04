@@ -41,9 +41,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Maintainter
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.maintainer.name=masemoel
-    
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-12-01
 
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
