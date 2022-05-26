@@ -210,3 +210,7 @@ ro.config.dha_tunnable=1
 
 # Time
 persist.timed.enable=true
+
+# Wi-Fi
+ro.vendor.net.enable_dual_wifi=1
+wifi.aware.interface=wifi-aware0
