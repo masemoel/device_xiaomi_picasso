@@ -4,3 +4,6 @@ allow init hal_fingerprint_default:process { ptrace };
 allow vendor_init proc_sched:file rw_file_perms;
 allow init vendor_sysfs_usb_supply:file rw_file_perms;
 allow init self:netlink_kobject_uevent_socket { create setopt getopt bind read };
+
+# Allow init to set attribute to sysfs_kprofiles
+allow init sysfs_kprofiles:file { setattr };
