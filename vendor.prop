@@ -48,6 +48,12 @@ vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.voice.path.for.pcm.voip=true
 
+# App launch prefetching (IORapd)
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # Bluetooth
 persist.vendor.qcom.bluetooth.soc=cherokee
 
