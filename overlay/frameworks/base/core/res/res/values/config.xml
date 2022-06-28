@@ -628,9 +628,6 @@
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">true</bool>
 
-    <!-- Boost the brightness on a triple press of the power button  -->
-    <integer name="config_triplePressOnPowerBehavior">2</integer>
-
     <!-- Display has physical cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
 
