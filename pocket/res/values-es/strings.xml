@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <string name="appname">Modo bolsillo</string>
-    <string name="pocketmode_title">Modo bolsillo amigable con la batería en segundo plano</string>
-    <string name="pocketmode_short_title">Modo bolsillo</string>
-    <string name="pocketmode_summary">Modo bolsillo amigable con la batería</string>
-    <string name="pocketmode_description">Al contrario del método tradicional que comprueba constantemente los sensores de proximidad y luz, este modo sólo los comprueba con el teléfono en la pantalla de bloqueo. De este modo, se reduce el consumo de energía y aumenta el sueño profundo.\nSi la pantalla del teléfono se apaga automáticamente cuando recién lo sacas del bolsillo, por favor espera unos segundos y vuelve a intentarlo.</string>
-</resources>
