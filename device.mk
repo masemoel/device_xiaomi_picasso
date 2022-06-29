@@ -228,7 +228,7 @@ PRODUCT_PACKAGES += \
 
 # DTB
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/dtb-12.5.9:dtb.img
+    $(LOCAL_PATH)/prebuilt/dtb-13.0.2:dtb.img
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -378,7 +378,7 @@ PRODUCT_COPY_FILES += \
 
 # Modules
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules-12.5.9,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules-13.0.2,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
