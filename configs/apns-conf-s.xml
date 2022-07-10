@@ -43971,4 +43971,46 @@
         apn="internet"
         type="default"
     />
+    
+    <apn carrier="中国广电 (CBN) GPRS"
+        mcc="460"
+        mnc="13"
+        apn="cmnet"
+        type="default,supl"
+    />
+    
+    <apn carrier="中国广电彩信 (CBN)"
+        mcc="460"
+        mnc="13"
+        apn="cmwap"
+        mmsc="http://mmsc.monternet.com"
+        mmsport="80"
+        mmsproxy="10.0.0.172"
+        port="80"
+        proxy="10.0.0.172"
+        type="mms"
+    />
+    
+    <apn carrier="中国广电 (CBN) IMS"
+        mcc="460"
+        mnc="13"
+        apn="ims"
+        type="ims"
+        protocol="IPV4V6"
+    />
+    
+    <apn carrier="中国广电 (CBN) GPRS"
+        mcc="460"
+        mnc="15"
+        apn="cbnet"
+        type="default,supl"
+    />
+    
+    <apn carrier="中国广电 (CBN) IMS"
+        mcc="460"
+        mnc="15"
+        apn="ims"
+        type="ims"
+        protocol="IPV4V6"
+    />
 </apns>
