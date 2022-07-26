@@ -7,3 +7,6 @@ type thermal_data_file, data_file_type, file_type;
 
 # Nodes
 type sysfs_touchpanel, sysfs_type, fs_type;
+
+# Persist
+type persist_subsys_file, vendor_persist_type, file_type;
