@@ -528,6 +528,10 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor
 
+# Thermal
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.sys.thermal.data.path=/data/vendor/thermal/
+
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
