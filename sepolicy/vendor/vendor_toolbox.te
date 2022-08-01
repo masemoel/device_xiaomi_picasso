@@ -19,7 +19,6 @@ allow vendor_toolbox {
     vendor_persist_alarm_file
     vendor_persist_audio_file
     vendor_persist_bluetooth_file
-    vendor_persist_camera_file
     vendor_persist_data_file
     vendor_persist_display_file
     vendor_persist_drm_file
