@@ -25,10 +25,10 @@
    <dimen name="status_bar_padding_top">12dp</dimen>
 
    <!-- the padding on the start of the statusbar -->
-   <dimen name="status_bar_padding_start">13dp</dimen>
+   <dimen name="status_bar_padding_start">7dp</dimen>
 
    <!-- the padding on the end of the statusbar -->
-   <dimen name="status_bar_padding_end">2dp</dimen>
+   <dimen name="status_bar_padding_end">0.2dip</dimen>
 
     <!-- the padding on the start and the end of the statusbar -->
     <dimen name="status_bar_extra_padding">8dp</dimen>
