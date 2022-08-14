@@ -16,9 +16,6 @@ $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
 # Inherit Lawnchair repository if available.
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
-# Hotword blobs
-$(call inherit-product, vendor/xiaomi/google/google.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
