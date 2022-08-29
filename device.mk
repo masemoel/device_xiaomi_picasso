@@ -239,10 +239,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
-# DTB
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/dtb-13.0.2:dtb.img
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -393,10 +389,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
-
-# Modules
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/prebuilt/modules-13.0.2,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
