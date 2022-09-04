@@ -12,10 +12,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="device_specific_settings_title">Notch style</string>
-    <string name="device_specific_settings_summary">Switch between the pill and the separated cameras style.</string>
-    <string name="device_pill_style_notch">Pill-style notch</string>
-
     <!-- Dirac settings -->
     <string name="dirac_enable">Enable enhancer</string>
     <string name="dirac_title">Mi sound enhancer</string>

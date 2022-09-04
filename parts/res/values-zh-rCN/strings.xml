@@ -12,11 +12,6 @@
      limitations under the License.
 -->
 <resources>
-     <!-- Device specific -->
-    <string name="device_specific_settings_title">设备特殊设置</string>
-    <string name="device_specific_settings_summary">红米 K30 5G特殊设置</string>
-    <string name="device_pill_style_notch">药丸形缺口</string>
-
     <!-- Dirac settings -->
     <string name="dirac_title">米音</string>
     <string name="dirac_summary">调整音质</string>
