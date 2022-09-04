@@ -1,0 +1,1 @@
+allow mediaextractor proc_uptime:file { read open };

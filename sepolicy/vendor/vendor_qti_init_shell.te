@@ -2,3 +2,5 @@ allow vendor_qti_init_shell self:capability { kill };
 
 # Allow vendor_init to relabel unlabeled files and directories
 allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
+
+allow vendor_init device:file { read open write getattr create };
