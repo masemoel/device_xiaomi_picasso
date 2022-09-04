@@ -16,10 +16,6 @@
     <string name="device_specific_settings_summary">Intercambia el estilo del notch entre relleno o sin relleno.</string>
     <string name="device_pill_style_notch">Rellenar notch (requiere reinicio del UI)</string>
 
-    <!-- DT2W -->
-    <string name="dt2w_enable_title">Doble toque para despertar</string>
-    <string name="dt2w_enable_summary">Toca dos veces cualquier punto de la pantalla en suspensión para activar el dispositivo.</string>
-
     <!-- Dirac settings -->
     <string name="dirac_enable">Activar el ecualizador Dirac</string>
     <string name="dirac_title">Ecualizador Dirac</string>

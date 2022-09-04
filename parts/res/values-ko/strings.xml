@@ -58,8 +58,4 @@
     <string name="dirac_preset_country">컨트리</string>
     <string name="dirac_preset_dance">댄스</string>
     <string name="dirac_preset_metal">메탈</string>
-    
-    <!--  DT2W    -->
-    <string name="dt2w_enable_title">두 번 두드려 깨우기</string>
-    <string name="dt2w_enable_summary">꺼진 화면을 두 번 두드려 화면을 켭니다.</string>
 </resources>

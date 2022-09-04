@@ -16,19 +16,15 @@
     <string name="device_specific_settings_title">设备特殊设置</string>
     <string name="device_specific_settings_summary">红米 K30 5G特殊设置</string>
     <string name="device_pill_style_notch">药丸形缺口</string>
-    <!--  DT2W    -->
-    <string name="dt2w_enable_title">点按两次来唤醒 </string>
-    <string name="dt2w_enable_summary">在屏幕关闭的状态下，双击开启屏幕</string>
+
     <!-- Dirac settings -->
     <string name="dirac_title">米音</string>
     <string name="dirac_summary">调整音质</string>
     <string name="dirac_headset_title">选择耳机类型</string>
     <string name="dirac_hifi_enable_title">开启 Hi-Fi</string>
     <string name="dirac_preset_title">选择预设</string>
-
     <string name="dirac_hifi_title">Hi-Fi</string>
     <string name="dirac_hifi_summary">降低底噪和失真，提升音频质量（需要插入有线耳机）</string>
-
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">默认</string>
     <!-- Dirac settings: Equalizer presets -->
