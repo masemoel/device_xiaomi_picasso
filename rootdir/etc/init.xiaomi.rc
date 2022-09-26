@@ -60,7 +60,6 @@ on boot
     chown system system /sys/class/leds/white/breath
     chown system system /sys/class/leds/white/delay_off
     chown system system /sys/class/leds/white/delay_on
-    chown system system /sys/class/thermal/thermal_message/sconfig
 
     # Touchpanel
     write /sys/touchpanel/double_tap 1
