@@ -300,7 +300,6 @@ PRODUCT_PACKAGES += \
     fstab.emmc.ramdisk \
     init.class_main.sh \
     init.mdm.sh \
-    init.mi_thermald.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
