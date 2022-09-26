@@ -236,9 +236,6 @@ on boot
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
 
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
-
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
 
