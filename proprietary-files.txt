@@ -280,7 +280,6 @@ vendor/lib64/camera/components/com.mi.node.rearvideo.so
 vendor/lib64/camera/components/com.mi.node.skinbeautifier.so
 vendor/lib64/camera/components/com.mi.node.superlowlightraw.so
 vendor/lib64/camera/components/com.mi.node.videobokeh.so
-vendor/lib64/camera/components/com.mi.node.watermark.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -433,8 +432,11 @@ vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libxmi_high_dynamic_range.so
 
+# Camera - from MIUI 13.0.2
+vendor/lib64/camera/components/com.mi.node.watermark.so|aaa5d1e83ba42bde82e9c701efa93727a628146e
+
 # Camera - from apollo
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|95291dbda4b37eebad03b062beccaadd4780f0c8
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|040754908683f59ee1b5b7f962f659fbed3a515a
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
