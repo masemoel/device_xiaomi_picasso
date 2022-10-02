@@ -1,1 +1,2 @@
 get_prop(vendor_netmgrd, vendor_radio_prop)
+allow vendor_netmgrd self:capability { sys_module };
