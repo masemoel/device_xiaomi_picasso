@@ -1,3 +1,4 @@
 allow platform_app zygote:unix_stream_socket { getopt };
 get_prop(platform_app, audio_config_prop)
 allow platform_app cgroup:file { read };
+hal_client_domain(platform_app, hal_misys)

@@ -44,6 +44,6 @@ allow vendor_toolbox persist_subsys_file:dir { read open getattr setattr };
 allow vendor_toolbox vendor_persist_alarm_file:file { getattr };
 allow vendor_toolbox vendor_persist_time_file:file { getattr };
 allow vendor_toolbox vendor_persist_hvdcp_file:file { getattr };
-allow vendor_toolbox persist_camera_file:dir { getattr };
+allow vendor_toolbox vendor_persist_camera_file:dir { getattr };
 allow vendor_toolbox vendor_persist_sensors_file:file { getattr };
 allow vendor_toolbox vendor_persist_sensors_file:fifo_file { getattr };
