@@ -1,0 +1,48 @@
+type miui_camera, domain;
+type hal_misys_xiaomi_hwservice, hwservice_manager_type;
+app_domain(miui_camera)
+
+allow miui_camera app_data_file:file execute;
+allow miui_camera hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+allow miui_camera hal_misys_xiaomi_hwservice:hwservice_manager find;
+allow miui_camera system_file:file { lock };
+allow miui_camera activity_service:service_manager find;
+allow miui_camera game_service:service_manager find;
+allow miui_camera netstats_service:service_manager find;
+allow miui_camera device_state_service:service_manager find;
+allow miui_camera cameraserver_service:service_manager find;
+allow miui_camera radio_service:service_manager find;
+allow miui_camera country_detector_service:service_manager find;
+allow miui_camera sensorservice_service:service_manager find;
+allow miui_camera gpu_service:service_manager find;
+allow miui_camera surfaceflinger_service:service_manager find;
+allow miui_camera trust_service:service_manager find;
+allow miui_camera shortcut_service:service_manager find;
+allow miui_camera thermal_service:service_manager find;
+allow miui_camera audioserver_service:service_manager find;
+allow miui_camera drmserver_service:service_manager find;
+allow miui_camera mediaserver_service:service_manager find;
+allow miui_camera mediametrics_service:service_manager find;
+allow miui_camera mediaextractor_service:service_manager find;
+allow miui_camera mediadrmserver_service:service_manager find;
+allow miui_camera app_api_service:service_manager find;
+allow miui_camera vr_manager_service:service_manager find;
+allow miui_camera autofill_service:service_manager find;
+allow miui_camera uimode_service:service_manager find;
+allow miui_camera audio_service:service_manager find;
+allow miui_camera hal_misys_hwservice:hwservice_manager { find };
+allow miui_camera dnsproxyd_socket:sock_file write;
+allow miui_camera netd:unix_stream_socket { read write connectto setopt };
+allow miui_camera self:udp_socket { connect getattr read recvfrom sendto write getopt setopt create };
+allow miui_camera self:tcp_socket { read write create setopt getopt getattr setattr connect shutdown bind listen accept name_connect };
+allow miui_camera fwmarkd_socket:sock_file { write };
+allow miui_camera port:tcp_socket { name_bind name_connect };
+allow miui_camera proc_stat:file rw_file_perms;
+allow miui_camera vendor_hal_perf_hwservice:hwservice_manager { find };
+
+binder_call(miui_camera, hal_camera_default);
+
+get_prop(miui_camera, qemu_hw_prop)
+get_prop(miui_camera, vendor_camera_prop);
+get_prop(miui_camera, vendor_fp_prop);
+get_prop(miui_camera, vendor_persist_camera_prop)

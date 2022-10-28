@@ -29,3 +29,12 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # GBoard
 ro.com.google.ime.kb_pad_port_b=1
+
+# MIUI Camera
+ro.product.mod_device=picasso_global
+vendor.camera.aux.packagelist=com.android.camera
+persist.vendor.camera.privapp.list=com.android.camera
+ro.com.google.lens.oem_camera_package=com.android.camera
+ro.miui.notch=1
+ro.hardware.camera=xiaomi
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
