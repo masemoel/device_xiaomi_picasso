@@ -441,17 +441,17 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|04075490868
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
-# Camera - from picasso_48m
+# Camera - from picasso_48m MIUI 13.0.4
 vendor/lib/camera/com.qti.sensor.picasso_wide_ov48b2q.so|b5122315bbed0c1d06fd64eb2642c9dc879f99d8
 vendor/lib/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin|feef516b588597109348a07aa75c8d677f1d4a3c
-vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin|a7c999716870ba49f96d8f9127a9eb729895f4cc
-vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin|21859d28d206db9ffc396e5648dd88478d6c5c95
-vendor/lib/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin|d695526275f6a96067bcc6df7907115a4e3d5236
+vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin|e3148ea9f9ad6452a7a2f00a4978969a88546d2f
+vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin|3e6426cad5b5dd2ee954ee302dd54713aa241354
+vendor/lib/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin|b95346168e99aa13374dea6c70add9eef632c6c7
 vendor/lib64/camera/com.qti.sensor.picasso_wide_ov48b2q.so|0da9cd53ea81941ab4a768b1b833fe82ba47fcf5
 vendor/lib64/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin|feef516b588597109348a07aa75c8d677f1d4a3c
-vendor/lib64/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin|a7c999716870ba49f96d8f9127a9eb729895f4cc
-vendor/lib64/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin|21859d28d206db9ffc396e5648dd88478d6c5c95
-vendor/lib64/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin|d695526275f6a96067bcc6df7907115a4e3d5236
+vendor/lib64/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin|e3148ea9f9ad6452a7a2f00a4978969a88546d2f
+vendor/lib64/camera/com.qti.tuned.picasso_48m_sunny_rear_depth_gc02m1_mono.bin|3e6426cad5b5dd2ee954ee302dd54713aa241354
+vendor/lib64/camera/com.qti.tuned.picasso_sunny_wide_ov48b2q.bin|b95346168e99aa13374dea6c70add9eef632c6c7
 
 # CDSP
 vendor/bin/cdsprpcd
