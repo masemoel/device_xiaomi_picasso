@@ -697,14 +697,14 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 
-# Fingerprint - from 12.5.9
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.lito.so|ded2f94df77c35291e57680598b692ca4ddaf09f
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.lito.so|052af6cf36f094f59aaaec329478b563fdf7f0ff
-vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so|412381af7a27923a4838ed9fd804bad9e533b92c
-vendor/lib64/libgoodixhwfingerprint.so|1e931528dfe44adcf29e617bc641b0f6c068c069
-vendor/lib64/libgf_hal.so|4bc0823421393d7d9867ab57cfd820a4ed809ee6
-vendor/lib64/libgf_ca.so|cbb9868ca7a195b65a728073a30e72f7b8bb849f
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|393d8da1466f00bc4479f557ce5d41b879831eee
+# Fingerprint
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.lito.so
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.lito.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # FM
 vendor/lib/vendor.qti.hardware.fm@1.0.so
@@ -890,7 +890,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libkeymaster_messages.so|ded5c943c17022eb34cafefdeefb1fccf3a9ae96
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.lito.so
@@ -1154,7 +1153,6 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -1244,6 +1242,11 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 # RIL (IMS)
 -system_ext/priv-app/ims/ims.apk
+-system_ext/app/ImsRcsService/ImsRcsService.apk
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -1500,6 +1503,7 @@ vendor/bin/mi_thermald
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/init.mi_thermald.rc
+vendor/etc/thermal-4k.conf
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
