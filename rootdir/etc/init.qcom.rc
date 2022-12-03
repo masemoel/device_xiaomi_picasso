@@ -256,7 +256,6 @@ on post-fs-data
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
-
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
     mkdir /data/vendor/tombstones/rfs 0771 system system
@@ -332,6 +331,10 @@ on post-fs-data
     mkdir /data/vendor/time/ 0700 system system
 
     setprop vold.post_fs_data_done 1
+
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
 
     #Create a folder for SRS to be able to create a usercfg file
     #mkdir /data/data/media 0770 media media

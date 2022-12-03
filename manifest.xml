@@ -527,6 +527,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.dolby.hardware.dms</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IDms/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
