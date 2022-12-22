@@ -119,9 +119,6 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.doze_settings_help_title)
-                    .setMessage(R.string.doze_settings_help_text)
-                    .setNegativeButton(R.string.dialog_ok, (dialog, which) -> dialog.cancel())
                     .create();
         }
 

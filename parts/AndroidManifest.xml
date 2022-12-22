@@ -29,7 +29,6 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
             android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
