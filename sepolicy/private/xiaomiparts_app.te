@@ -20,6 +20,9 @@ allow xiaomiparts_app {
   sensorservice_service
   surfaceflinger_service
   tethering_service
+  netstats_service
+  device_policy_service
+  storagestats_service
 }:service_manager find;
 
 allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
@@ -28,6 +31,7 @@ allow xiaomiparts_app sysfs_leds:dir r_dir_perms;
 allow xiaomiparts_app game_service:service_manager { find };
 allow xiaomiparts_app content_capture_service:service_manager { find };
 allow xiaomiparts_app hint_service:service_manager { find };
+allow xiaomiparts_app sysfs_thermal:file { read open write getattr };
 
 allow xiaomiparts_app {
   system_data_file
