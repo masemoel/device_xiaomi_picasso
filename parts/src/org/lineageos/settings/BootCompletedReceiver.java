@@ -24,6 +24,7 @@ import android.util.Log;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -35,6 +36,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         DozeUtils.checkDozeService(context);
         // Force apply our default value for doze if it is not set.
         DozeUtils.enableDoze(context, DozeUtils.isDozeEnabled(context));
+        ThermalUtils.startService(context);
     }
 
 }
