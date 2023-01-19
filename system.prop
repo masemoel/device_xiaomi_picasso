@@ -1,10 +1,6 @@
 # ART
 ro.vendor.qti.am.reschedule_service=true
 
-# Blurs
-ro.surface_flinger.supports_background_blur=1
-ro.sf.blurs_are_expensive=1
-
 # Charger
 ro.charger.enable_suspend=1
 persist.vendor.hvdcp_opti.disallowed=1
@@ -19,9 +15,6 @@ pm.dexopt.install=speed-profile
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=quicken
-
-# Disable blur on app launch
-ro.launcher.blur.appLaunch=0
 
 # Dalvik
 dalvik.vm.heapgrowthlimit=256m
