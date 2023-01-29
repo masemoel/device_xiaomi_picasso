@@ -96,6 +96,8 @@ on boot
     setprop vendor.usb.controller a600000.dwc3
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
+# Default country code
+    setprop ro.boot.wificountrycode 00
 # Prevents permission denied error for telephony
     chmod 0644 /proc/cmdline
     chown system system /proc/cmdline
