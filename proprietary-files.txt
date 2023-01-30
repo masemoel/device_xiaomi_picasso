@@ -442,7 +442,6 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|04075490868
 -priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Snap,Aperture,GoogleCameraGo,Camera2|3dd397c14c9b6f86a3c69465e1bdcef8ca2af331
 lib/libcamera_algoup_jni.xiaomi.so
 lib64/libcamera_algoup_jni.xiaomi.so
-lib64/libcameraservice.so|69639b4d2eaa00e27388221299322803a4bf3e5b
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
