@@ -72,7 +72,25 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.options=::v2
 
 # Dalvik
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,7
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapsize=512m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.systemuicompilerfilter=speed
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=verify
+pm.dexopt.install=speed-profile
+ro.sys.fw.dex2oat_thread_count=8
 
 # Display
 debug.egl.hw=1
