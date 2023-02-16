@@ -266,3 +266,7 @@ on property:sys.boot_completed=1
     # debug option is enabled.
     write /sys/kernel/slab/zs_handle/store_user 0
     write /sys/kernel/slab/zspage/store_user 0
+
+    # KProfiles tune 
+    write /sys/module/kprofiles/parameters/auto_kprofiles Y
+    write /sys/module/kprofiles/parameters/kp_mode 2
