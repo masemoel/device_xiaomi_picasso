@@ -51,6 +51,10 @@ on post-fs-data
     chmod 0644 /dev/elliptic1
 
 on boot
+    # Health
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+    
     chown system system /sys/class/touch/touch_dev/palm_sensor
 
     # Create persist for camera calibration data
