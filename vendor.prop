@@ -63,6 +63,7 @@ persist.vendor.service.bdroid.sibs=false
 # Camera
 camera.disable_zsl_mode=true
 persist.camera.gyro.disable=0
+persist.vendor.camera.logInfoMask=false
 
 # CNE
 persist.vendor.cne.feature=1

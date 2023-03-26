@@ -9,6 +9,9 @@ persist.vendor.bt.a2dp.hal.implementation=true
 # Blurs
 ro.surface_flinger.supports_background_blur=1
 
+# Camera
+log.tag.CHIUSECASE=ERROR
+
 # Charger
 ro.charger.enable_suspend=1
 persist.vendor.hvdcp_opti.disallowed=1
