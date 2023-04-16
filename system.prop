@@ -66,6 +66,16 @@ ro.media.recorder-max-base-layer-fps=60
 # Misc
 persist.sys.binary_xml=false
 
+# Radio Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
+
 # RIL
 persist.sys.fflag.override.settings_provider_model=false
 ril.subscription.types=NV,RUIM
