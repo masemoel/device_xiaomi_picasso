@@ -438,37 +438,12 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|04075490868
 -priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Snap,Aperture,GoogleCameraGo,Camera2|3dd397c14c9b6f86a3c69465e1bdcef8ca2af331
 lib/libcamera_algoup_jni.xiaomi.so
 lib64/libcamera_algoup_jni.xiaomi.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-external-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-external-impl.so
-vendor/lib/camera.device@3.5-impl.so
-vendor/lib/camera.device@3.6-external-impl.so
-vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libgui_vendor.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib/vendor.qti.hardware.camera.device@2.0.so
-vendor/lib/vendor.qti.hardware.camera.device@3.5.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-external-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-external-impl.so
-vendor/lib64/camera.device@3.5-impl.so
-vendor/lib64/camera.device@3.6-external-impl.so
 vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libdng_sdk2vendor.so
 vendor/lib64/libgui_vendor.so
 vendor/lib64/libflaw.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libst_sr_models.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@2.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
