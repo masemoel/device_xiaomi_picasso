@@ -28,9 +28,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230305.008.C1 9619669 release-keys"
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230405.003.E1 9802792 release-keys"
 
-BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ2A.230305.008.C1/9619669:user/release-keys
+BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ2A.230405.003.E1/9802792:user/release-keys
 
 # Face unlock
 TARGET_SUPPORT_FACE_UNLOCK := true
