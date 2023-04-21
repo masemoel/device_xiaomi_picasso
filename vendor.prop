@@ -55,6 +55,8 @@ iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # Bluetooth
+persist.bluetooth.bqr.event_mask=30
+persist.bluetooth.bqr.min_interval_ms=500
 persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.service.bdroid.sibs=false
 
