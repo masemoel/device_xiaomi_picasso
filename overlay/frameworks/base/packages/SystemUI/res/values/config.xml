@@ -115,4 +115,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- Whether to show refresh rate QS tile -->
     <bool name="config_showRefreshRateQsTile">true</bool>
+
+    <!-- Update battery info every second when device is charging -->
+    <bool name="config_alternateFastchargeInfoUpdate">true</bool>
 </resources>
