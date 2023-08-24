@@ -1522,7 +1522,6 @@ vendor/bin/ssr_setup
 
 # Thermal
 vendor/bin/mi_thermald
-vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/init.mi_thermald.rc
 vendor/etc/thermal-4k.conf
@@ -1536,8 +1535,11 @@ vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+
+# Thermal engine - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
+vendor/bin/thermal-engine|63eaafcd66f41133cc721e6dacffb718b7868034
+-vendor/lib/libthermalclient.so|20114bc026d44fd2599f6ea11814c0f47608d2ff
+-vendor/lib64/libthermalclient.so|5717255cb13238f094b121066acc6f7b16335508
 
 # Time
 -vendor/app/TimeService/TimeService.apk
