@@ -33,7 +33,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ3A.230805.001/10316531:user/release-keys
 
 # Face unlock
-TARGET_SUPPORT_FACE_UNLOCK := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
