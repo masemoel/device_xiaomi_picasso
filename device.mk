@@ -459,7 +459,7 @@ PRODUCT_PACKAGES += \
     PocketMode
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/pocket/privapp-permissions-pocketmode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-pocketmode.xml
+    $(LOCAL_PATH)/pocket/privapp-permissions-pocketmode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-pocketmode.xml
 
 # Power
 PRODUCT_PACKAGES += \
