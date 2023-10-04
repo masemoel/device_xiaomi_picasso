@@ -26,7 +26,7 @@ package io.github.maytinhdibo.pocket;
 import android.app.Fragment;
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.collapsingtoolbar.R;
+import com.android.settingslib.widget.R;
 
 public class PocketPreferenceActivity extends CollapsingToolbarBaseActivity {
     @Override
