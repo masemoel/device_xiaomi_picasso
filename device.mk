@@ -499,7 +499,8 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl-xiaomi \
+    android.hardware.sensors@1.0-impl \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
