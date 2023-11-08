@@ -28,9 +28,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 14 UP1A.231005.007 10754064 release-keys"
+    PRIVATE_BUILD_DESC="husky-user 14 UD1A.231105.004 11010374 release-keys"
 
-BUILD_FINGERPRINT := google/cheetah/cheetah:14/UP1A.231005.007/10754064:user/release-keys
+BUILD_FINGERPRINT := google/husky/husky:14/UD1A.231105.004/11010374:user/release-keys
 
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
