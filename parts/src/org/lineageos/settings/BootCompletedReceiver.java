@@ -32,7 +32,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (!intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
             return;
         }
-        DiracUtils.initialize(context);
+        DiracUtils.getInstance(context);
         ThermalUtils.startService(context);
     }
 

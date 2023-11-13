@@ -1,33 +1,38 @@
 package org.lineageos.settings.dirac;
 
+import android.content.Context;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
+import org.lineageos.settings.R;
+
 public class DiracTileService extends TileService {
+
+    private DiracUtils mDiracUtils;
 
     @Override
     public void onStartListening() {
+        mDiracUtils = DiracUtils.getInstance(getApplicationContext());
 
         Tile tile = getQsTile();
-        if (DiracUtils.isDiracEnabled()) {
+        if (mDiracUtils.isDiracEnabled()) {
             tile.setState(Tile.STATE_ACTIVE);
         } else {
             tile.setState(Tile.STATE_INACTIVE);
         }
 
         tile.updateTile();
-
         super.onStartListening();
     }
 
     @Override
     public void onClick() {
         Tile tile = getQsTile();
-        if (DiracUtils.isDiracEnabled()) {
-            DiracUtils.setMusic(false);
+        if (mDiracUtils.isDiracEnabled()) {
+            mDiracUtils.setEnabled(false);
             tile.setState(Tile.STATE_INACTIVE);
         } else {
-            DiracUtils.setMusic(true);
+            mDiracUtils.setEnabled(true);
             tile.setState(Tile.STATE_ACTIVE);
         }
         tile.updateTile();
