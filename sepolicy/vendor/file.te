@@ -6,6 +6,7 @@ type vendor_persist_camera_file, file_type, vendor_persist_type;
 type thermal_data_file, data_file_type, file_type;
 
 # Nodes
+type sysfs_leds_brightness, fs_type, sysfs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_touchpanel, sysfs_type, fs_type;
 type vendor_proc_display, fs_type, proc_type;

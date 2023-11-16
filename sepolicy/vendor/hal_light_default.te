@@ -1,0 +1,6 @@
+allow hal_light_default {
+  sysfs_leds
+  sysfs_leds_brightness
+}:file rw_file_perms;
+
+r_dir_file(hal_light_default, sysfs_leds)
