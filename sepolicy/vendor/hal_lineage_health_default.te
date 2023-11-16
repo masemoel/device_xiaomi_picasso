@@ -1,0 +1,3 @@
+# Allow lineage health hidl to access battery control nodes
+allow hal_lineage_health_default vendor_sysfs_battery_supply:dir search;
+allow hal_lineage_health_default vendor_sysfs_battery_supply:file { getattr open read write };
