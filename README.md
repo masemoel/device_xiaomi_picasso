@@ -1,19 +1,19 @@
 ![crDroid](http://i.imgur.com/BE3pE0l.png "crDroid")
 
-crDroid 9.x (A13/T) for Redmi K30 5G (picasso)
+crDroid 10.x (A14/T) for Redmi K30 5G (picasso)
 ======================================
 
 # How to build
 
 Download crDroid's source and picasso repos. You can have a look at my manifest:
 
-https://github.com/masemoel/local_manifests/blob/master/picasso_t.xml
+https://github.com/masemoel/local_manifests/blob/master/picasso_u.xml
 
 Then go to the source folder and run:
 
 ```bash
 . build/envsetup.sh
-brunch picasso
+lunch lineage_picasso-userdebug && mka bacon -j 16
 ```
 
 # Device specifications
