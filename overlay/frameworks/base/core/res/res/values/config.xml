@@ -752,7 +752,7 @@
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
     <!-- Pocket lock -->
-    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketModeSupported">false</bool>
 
     <!-- Whether device supports an gaming mode profiles -->
     <bool name="config_gamingmode_performance">true</bool>
